@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News Blog force</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="main_header" role="banner">
+        <div class="top_header">
+            <div class="container">
+                <div class="top_header_cont">
+                    <div class="top_menu">
+                        <ul class="top_inner_menu">
+                            <li> <a href="#">Portal Login</a></li>
+                            <li> <a href="#"> Work Force Dimensions</a></li>
+                            <li> <a href="#">NeoGov </a> </li>
+                            <li> <a href="#">MIS Work Order </a> </li>
+                            <li> <a href="#">SJFL Home  <img src="img/link-nv.svg" alt="link"></a> </li>
+                           
+                        </ul>
+                        <!-- <div class="select_language">
+                            <select class="form_control">
+                           <option>Translate</option>
+                           <option>English</option>
+                           <option>Spain</option>
+                        </select>
+                        </div> -->
+                        <div class="top_search">
+                            <img src="img/search.png" style="max-height: 35px;width: 180px;" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-xl" aria-label="Top Navigation">
+            <div class="container">
+                <div class="head_wrap">
+                    <div class="logo_wrap">
+                        <a class="navbar-brand" href="#">
+                            <img src="img/logo.svg" alt=" Logo">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <nav class="nav_bottom" aria-label="Main Navigation">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#">Departments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Resources</a>
+                                    <ul class="dropdown-menu" aria-label="">
+                                        <li><a href="#">lorem </a> </li>
+                                        <li>
+                                            <a href="#">lorem ipsum</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"> Lorem ipsum</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Docs & Forms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">News</a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="icon-bar top"></span>
+               <span class="icon-bar midlde"></span>
+               <span class="icon-bar last"></span>
+               </button>
+            </div>
+        </nav>
+
+    </header>
+    <div class="main_wrapper" role="main" id="page_content" style="">
+        <div class="main_breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#"> <img src="img/home.svg" alt=" Home"> Home</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">page title </a></li>
+                        <li class="breadcrumb-item"><a href="#">page title </a></li>
+                        <li class="breadcrumb-item active" aria-current="page">page title</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="page_title text-center ">
+            <h1>Blog Force</h1>
+        </div>
+        <div class="news_wraper">
+      
+            <div class="newsSearchEra">
+                <div class="container">
+                    <div class="row newsInRow ">
+                        <div class="col-md-12 nsleft">
+                            <div class="search_filter_title">
+                                <div class="search-box">
+                                    <div class="search_input">
+                                        <form role="search" method="get" id="news-search-form">
+                                            <div>
+                                                  <label for="news-search-input" class="title">Search</label>
+                                                <div class="input-group">
+                                                <input type="text" id="news-search-input" class="form-control" placeholder="Search" name="s" aria-label="Search news">
+                                                <button class="btn btn-default" id="news-search-btn" type="submit" aria-label="Submit search">
+                                       <img src="img/search-icon.svg" alt="search icon">
+                                       </button>
+                                            </div>
+                                            </div>
+
+                                            <div class="filter_box col-one" id="filter-category-box">
+                                            <label class="title" for="filter-category">Category</label>
+                                            <select id="filter-category" class="form-control" aria-label="Filter by category">
+                                       <option>Category</option>
+                                       <option class="">All</option>
+                                       <option class="">1</option>
+                                       <option class="">2</option>
+                                    </select>
+                                        </div>
+                                        <button type="button" class="clear-filters">
+                            Clear filters
+                            </button>
+                                          
+                                        </form>
+                                    </div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="col-md-12 nsRight">
+                            <div class="newsSort">
+                                <label class="title" for="sort-news">Sort</label>
+                                <select id="sort-news" class="form-control" aria-label="Sort news">
+                              <option>Most Recent First</option>
+                              <option class="">All</option>
+                              <option class="">1</option>
+                              <option class="">2</option>
+                           </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsRow row">
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                        <span class="category">Category</span> |
+                                        <span class="date">Jun 01, 2024</span>
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                           
+                                            <p>
+                                                Many rows of text about the news of the news article. An intro probably. Perh-aps this is a good opportunity to use an ellipsis? or the truncated text function? Many rows of text about the news of the news article. An introduction probably. perhaps this is a good opportunity to use an ellipsis or the truncated text function?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                        <span class="category">Category</span> |
+                                        <span class="date">Jun 01, 2024</span>
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            
+                                            <p>
+                                                Many rows of text about the news of the news article. An intro probably. Perh-aps this is a good opportunity to use an ellipsis? or the truncated text function? Many rows of text about the news of the news article. An introduction probably. perhaps this is a good opportunity to use an ellipsis or the truncated text function?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                        <span class="category">Category</span> |
+                                        <span class="date">Jun 01, 2024</span>
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            
+                                            <p>
+                                                Many rows of text about the news of the news article. An intro probably. Perh-aps this is a good opportunity to use an ellipsis? or the truncated text function? Many rows of text about the news of the news article. An introduction probably. perhaps this is a good opportunity to use an ellipsis or the truncated text function?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                            <span class="category">Category</span> |
+                                            <span class="date">Jun 01, 2024</span>
+                                        </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                           
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                        <span class="category">Category</span> |
+                                        <span class="date">Jun 01, 2024</span>
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            
+                                            <p>
+                                                Many rows of text about the news of the news article. An intro probably. Perh-aps this is a good opportunity to use an ellipsis? or the truncated text function? Many rows of text about the news of the news article. An introduction probably. perhaps this is a good opportunity to use an ellipsis or the truncated text function?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category_date">
+                                        <span class="category">Category</span> |
+                                        <span class="date">Jun 01, 2024</span>
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            
+                                            <p>
+                                                Many rows of text about the news of the news article. An intro probably. Perh-aps this is a good opportunity to use an ellipsis? or the truncated text function? Many rows of text about the news of the news article. An introduction probably. perhaps this is a good opportunity to use an ellipsis or the truncated text function?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination" role="navigation" aria-label="Pagination">
+                        <img src="img/pagination.png" alt="Pagination navigation graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="container">
+            <div class="row footer_row align-items-start">
+                <div class="col-md-4  foot_col ">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="img/footer-logo.svg" alt="GCWS Logo" height="">
+                        </a>
+                    </div>
+                
+                </div>
+                <div class="col-md-4 foot_col">
+                    <h2>Quick Links</h2>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#" class="">GovTV</a></li>
+                        <li><a href="#" class="">iMap</a></li>
+                        <li><a href="#" class="">Holiday Schedule</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-md-4 foot_col">
+                    <h2>Follow SJC</h2>
+                    <ul class="footer-links list-unstyled mb-0">
+                        <li><a href="#" class="">Employee Newsletter</a></li>
+                        <li><a href="#" class="">Stay Informed</a></li>
+                       
+                       
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center">
+                    <small class="footer-copyright text-white">
+            Copyright 2025
+           
+          </small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/expand.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/custom.js "></script>
+</body>
+
+</html>
