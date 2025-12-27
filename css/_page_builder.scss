@@ -1,8 +1,7 @@
 //Pgae builder
 .gray,
 .grey {
-    background-color: $primary;
-    color: #000000;
+    background-color: #E7E9E9;
 }
 
 .lightblue {
@@ -18,7 +17,7 @@
 }
 
 .lightgray {
-    background-color: #F5F5F5;
+    background-color: #E7E9E9;
 }
 
 .gform_button {
@@ -98,15 +97,20 @@
             padding-right: 0px;
         }
     }
-    >h2 {
-        margin-bottom: 5px !important;
+    >h1
+    >h2,
+    >h3,
+    >h4,
+    >h5,
+    >h6 {
+        margin-bottom: 24px !important;
     }
 }
 
 .main_wrapper {
     padding-top: 90px;
     p {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
     li {
         @include secondary-font;
@@ -158,16 +162,21 @@
         font-weight: 500;
         li {}
         a {
-            color: $black;
-            font-weight: 500;
-            text-decoration: none;
+            color: var(--Blue, #003B71);
+            text-align: center;
+            font-family: "Work Sans";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
             &:hover {
                 text-decoration: underline;
             }
         }
         li.active {
             color: $black;
-            font-weight: 400;
+            font-weight: 600;
+            font-size: 15px;
         }
         img {
             vertical-align: unset;
@@ -307,18 +316,18 @@
             width: 100%;
             aspect-ratio: 141/106;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 15px;
         }
         &.no-p-tag {
             &:hover {}
         }
     }
     .img_block_title {
-        padding: 15px;
+        padding: 24px;
         text-align: center;
         h3 {
-            color: $black;
-            font-size: 21px;
+            color: $primary;
+            font-size: 24px;
             font-weight: 700;
         }
         p {}
@@ -327,7 +336,7 @@
         &:hover {
             a {
                 h3 {
-                    color: #14213F;
+                    color: $secondary;
                 }
             }
         }
@@ -375,7 +384,7 @@
         flex-direction: column;
         position: relative;
         border: 0;
-        border-radius: 20px 0px;
+        border-radius: 15px 15px;
         box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
         >a {
             display: flex;
@@ -383,7 +392,7 @@
             /* height: 100%;*/
             &:hover {
                 h3 {
-                    color: #14213F;
+                    color: $secondary;
                 }
             }
         }
@@ -399,6 +408,9 @@
             position: relative;
             img {
                 width: 100%;
+                aspect-ratio: 141/106;
+                object-fit: cover;
+                border-radius: 15px 15px 0px 0px;
             }
         }
         .text_card_block {
@@ -406,10 +418,12 @@
             height: auto;
             p {
                 margin-bottom: 10px;
+                @include line-clamp(4);
             }
             h3 {
-                font-size: 18px;
+                font-size: 21px;
                 margin-bottom: 8px;
+                color: $primary;
             }
             .email {
                 a {
@@ -479,12 +493,13 @@ h2+.expand_img_grid {
     .expand_box {
         background: $white;
         position: relative;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        background: var(--White, #FFF);
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
         &:hover {
             h3 {
                 text-decoration: underline;
-                color: $bg-blue;
+                color: $secondary;
             }
             .plus-minus_icon {
                 img {}
@@ -493,17 +508,17 @@ h2+.expand_img_grid {
     }
     .expand_det {
         text-align: left;
-        padding: 30px 15px;
-        padding-bottom: 20px;
+        padding: 16px 16px;
         display: flex;
         flex-direction: column;
         /*  background: #fff;*/
         h3 {
-            font-size: 21px;
+            color: $primary;
+            font-family: "Work Sans";
+            font-size: 24px;
+            font-style: normal;
             font-weight: 700;
-            margin-bottom: 3px;
-            color: $black;
-            min-height: 40px;
+            line-height: normal;
         }
         .job_title {
             font-size: 16px;
@@ -525,7 +540,7 @@ h2+.expand_img_grid {
             padding: 0px 12px;
             width: 25%;
             list-style: none;
-            margin-bottom: 16px;
+            margin-bottom: 24px;
             >a {
                 text-decoration: none;
             }
@@ -534,8 +549,8 @@ h2+.expand_img_grid {
                     content: "";
                     position: absolute;
                     width: 100%;
-                    height: 15px;
-                    bottom: -10px;
+                    height: 27px;
+                    bottom: -18px;
                     background: $white;
                     z-index: 9;
                 }
@@ -557,11 +572,13 @@ h2+.expand_img_grid {
         display: none;
         overflow: hidden;
         width: 100%;
-        margin-top: -10px;
+        margin-top: -5px;
         box-shadow: none;
         background: $white;
         border-radius: 10px;
-        box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 15px;
+        background: var(--White, #FFF);
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
         
     }
     .expanding-container.expanded,
@@ -604,7 +621,11 @@ h2+.expand_img_grid {
         max-width: 960px;
         p {
             a {
-                font-weight: 600;
+                font-weight: 700;
+                color: $darkblue;
+                &:hover{
+                    color: $secondary;
+                }
             }
         }
         @include md {
@@ -613,7 +634,7 @@ h2+.expand_img_grid {
         >a {
             text-decoration: underline;
             &:hover {
-                color: $red;
+                color: $secondary;
             }
         }
         P+strong {
@@ -671,10 +692,10 @@ h2+.expand_img_grid {
     }
     .owl-nav {
         button {
-            width: 46px;
-            height: 50px;
-            border-radius: 0px 5px 5px 0px;
-            background: rgba(255, 255, 255, 0.50);
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.90);
             box-shadow: none;
             display: flex;
             align-items: center;
@@ -695,14 +716,15 @@ h2+.expand_img_grid {
             }
         }
         .owl-next {
-            right: 00px;
-            border-radius: 0px 5px 5px 0px;
+            right: 16px;
+            border-radius: 100%;
+            
+        }
+        .owl-prev {
+            left: 16px;
             img {
                 @include rotate;
             }
-        }
-        .owl-prev {
-            left: 00px;
         }
     }
     .owl-stage-outer {
@@ -731,7 +753,7 @@ h2+.expand_img_grid {
 // ===== Page builder slider End =====
 //How to starts
 .how_to_cont {
-    max-width: 900px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     h2 {
@@ -742,7 +764,6 @@ h2+.expand_img_grid {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         margin-bottom: 0px;
-        padding-top: 10px;
         h6 {
             margin-bottom: 0px;
         }
@@ -762,11 +783,12 @@ h2+.expand_img_grid {
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            margin-right: 20px;
+            margin-right: 24px;
             color: $black;
             font-weight: 700;
             font-size: 21px;
             border: 2px solid $black;
+            font-family: $primary-font;
         }
         .how_title {
             font-size: 21px;
@@ -800,19 +822,19 @@ h2+.expand_img_grid {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        min-height: 45px;
+        min-height: 50px;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        font-size: 21px;
-        padding: 16px 16px;
+        font-size: 16px;
+        padding: 12px 16px;
         background-color: $sand;
         border-radius: 10px;
         font-weight: 700;
         height: 100%;
         position: relative;
         border: 0;
-        transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.1s ease-in-out;
         box-shadow: none;
         line-height: normal;
         @include primary-font;
@@ -915,11 +937,12 @@ h2+.expand_img_grid {
     }
     h3 {
         font-size: 21px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
+        color: $primary;
     }
     h4 {
-        font-weight: normal;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 15px;
         text-transform: none;
         font-family: $secondary-font;
         text-transform: capitalize;

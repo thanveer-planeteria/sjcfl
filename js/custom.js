@@ -36,8 +36,8 @@ $(document).ready(function() {
         autoWidth: false,
         items: 1,
         navText: [
-            '<img src="/wp-content/themes/planeteriaweb/img/arrow_forward.svg">',
-            '<img src="/wp-content/themes/planeteriaweb/img/arrow_forward.svg">'
+            '<img src="./img/arrow_forward.svg">',
+            '<img src="./img/arrow_forward.svg">'
         ],
         navContainer: '.owl-general .custom-nav',
         /*responsive:{

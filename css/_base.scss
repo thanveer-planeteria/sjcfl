@@ -124,7 +124,7 @@ label{
     line-height: normal;
 }
 a {
-    color: #005598;
+    color: $darkblue;
     font-weight: 600;
     &:hover {
         color: #14213f;
@@ -134,12 +134,12 @@ a {
 }
 
 p a {
-    color: #005598;
-    font-weight: 600;
+    color: $darkblue;
+    font-weight: 700;
     text-decoration: underline;
     text-decoration-style: solid !important;
     &:hover {
-        color: #14213f;
+        color: $secondary;
         text-decoration: underline;
     }
 }
@@ -293,7 +293,7 @@ select {
 
 label.title {
     font-weight: 700;
-    @include primary-font;
+    @include secondary-font;
 }
 
 ::-webkit-input-placeholder {

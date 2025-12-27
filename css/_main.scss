@@ -2298,6 +2298,8 @@ p.date {
     align-items: center;
     .spotlight_img {
         border-radius: 100%;
+        width: 392px;
+        height: 392px;
         img{
             border-radius: 100%;
             aspect-ratio: 1/1;
@@ -2457,4 +2459,13 @@ blockquote {
         font-weight: 400;
         line-height: normal;
     }
+}
+p.sub_head{
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
