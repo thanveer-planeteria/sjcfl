@@ -156,6 +156,27 @@
 .search_filter_title .search-box .input-group {
     min-width: calc(100vw - 30px);
 }
+.calendar_wrap .list_search_wraper{
+        grid-template-columns: 1fr;
+        row-gap: 8px;
+    }
+    .calendar_wrap .calendar-filter-section .find-btn a{
+        min-width: 100%;
+        margin-right: 0px;
+    }
+    .cal_filter_wraper{
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+    .calendar_wrap .calendar-filter-section .month_list_view select{
+        min-width: calc(100vw - 30px);
+    }
+    .sort_boxResult select {
+        min-width: calc(100vw - 30px);
+    }
+    .col-le{
+        margin-bottom: 24px;
+    }
 }
 
 @media (min-width:1200px) {

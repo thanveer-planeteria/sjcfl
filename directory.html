@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Calendar List</title>
+    <title>Forms directory</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -91,14 +91,7 @@
         </nav>
 
     </header>
-
-
-
-
-
-    <div class="main_wrapper" role="main" id="page_content">
-
-
+    <div class="main_wrapper" id="page_content" style="">
         <div class="main_breadcrumb">
             <div class="container">
                 <nav aria-label="breadcrumb">
@@ -113,153 +106,198 @@
                 </nav>
             </div>
         </div>
-
-        <div class="page_title text-center ">
-            <h1>Calendar</h1>
+        <div class="page_title text-center resut_title">
+            <h1>Documents & Forms Directory</h1>
         </div>
-
-        <div class="calendar_wrap">
-            <div class="container">
-
-                <div class="calendar-filter-section">
-                    <div class="list_search_wraper">
-                    <div class="dropdown-field">
-                        <span class="icon">
-                        <img src="img/search-blue.svg" alt="Search">
-                        </span>
-                        <input type="text" class="form-control search-label" placeholder="Search for Meetings" aria-label="Search for Meetings">
-                    </div>
-                    <div class="find-btn">
-                        <a href="#" class="subtitle-label">Find Events</a>
-                    </div>
-                    </div>
-                    <!-- <div class="hide_filter">
-                        <img src="img/filter-icon.svg" alt="Hide Filters">
-                        <a href="#" class="hide-filters-label">Hide Filters</a>
-                    </div> -->
-                    <div class="month_list_view">
-                        <label for="month-select" class="month-label ">View</label>
-                        <select id="month-select" class="form-control">
-      <option value="">Month</option>
-           <option value="">List</option>
-      
-    </select>
-
-                    </div>
-                </div>
-
-                <div class="calendar-nav">
-                    <div class="nav-arrows">
-                        <a href="#" class="nav-arrow prev" aria-label="Previous Month">
-                            <img src="img/prev-icon.svg" alt="Previous">
-                        </a>
-                        <a href="#" class="nav-arrow next" aria-label="Next Month">
-                            <img src="img/next-icon.svg" alt="next">
-                        </a>
-                    </div>
-                    <div class="calendar-labels">
-                        <a href="#" class="ct-month">Today</a>
-                        <button class="month-btn">May 2025 <img src="img/select-arrow.svg" alt="Select Arrow"> </button>
-
-                    </div>
-                </div>
-
-
-                <div class="row cal-row">
-                   
-
-                    <div class="col">
-                        <div class="cal_filter_wraper">
-                         <div class="form-group">
-                                <label class="title" for="event-category">Event Category</label>
-                                <select class="form-control" id="event-category">
-                                    <option>Event Category</option>
-                                    <option>Category 1</option>
-                                    <option>Category 2</option>
-                                </select>
-                        </div>
-                        <button type="button" class="clear-filters">Clear filters</button>
-                        </div>
-
-                        <div class="cal_list_info">
-
-                            <div class="list_wrap">
-                                <div class="evt_date">
-                                    <span>Aug 01</span> 
-                                     <span>2025</span> 
-                                </div>
-                                <div class="evt_info">
-                                    <a href="#">
-                                        <div class="ev_dt_cat">
-                                            <span class="time">10:00AM - 1:00PM</span> |
-                                            <span class="category">Community Center</span>
-                                            
+        <div class="resultWraper">
+           
+            <div class="row no-margin directory_filter">
+                <div class="container">
+                    <div class="row">
+                        <!-- Filter Column -->
+                        <div class="col-lg-3 col-md-4 col-le">
+                           
+                           <form role="search" method="get" id="dir-search-form" class="dir-search-form">
+                                    <div>
+                                        <label for="news-search-input" class="title">Search</label>
+                                        <div class="input-group">
+                                        <input type="text" id="dpt-search-input" class="form-control dir-search-input" placeholder="Search" name="s" aria-label="Search news">
+                                        <button class="btn btn-default search-btn" id="directory-search-btn" type="submit" aria-label="Submit search">
+                                       <img src="img/search-icon.svg" alt="search icon">
+                                       </button>
                                         </div>
-                                        <h3>Title of an Event or Meeting</h3>
-                                        <p>
-                                            Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel, our nonsensical text will help you fill in those empty
-                                            spaces with style.
-                                        </p>
+                                    </div>
+                                          
+                            </form>
+                        <h2 id="category-filter-heading">Filters</h2>
+
+                        <form>
+                            <h3 id="category-filter-heading">Category</h3>
+
+                            <fieldset>
+                            <legend class="sr-only">Filter by category</legend>
+
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="category"
+                                name="category"
+                                value="category"
+                                >
+                                <label for="category">
+                                Category <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="category1"
+                                name="category1"
+                                value="category"
+                                >
+                                <label for="category1">
+                                Category <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="category2"
+                                name="category2"
+                                value="category"
+                                >
+                                <label for="category1">
+                                Category <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="category3"
+                                name="category3"
+                                value="category"
+                                >
+                                <label for="category1">
+                                Category <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="category4"
+                                name="category4"
+                                value="category"
+                                >
+                                <label for="category1">
+                                Category <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+                           
+
+                         
+
+                           
+
+                           
+
+                            </fieldset>
+
+                            <h3>Document Type</h3>
+                            <fieldset>
+                            <legend class="sr-only">Document Type</legend>
+
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="PDFs"
+                                name="PDFs"
+                                value="PDFs"
+                                >
+                                <label for="PDFs">
+                                PDFs <span aria-hidden="true">(23)</span>
+                                </label>
+                            </div>
+
+                            <div class="filter-option">
+                                <input
+                                type="checkbox"
+                                id="External link"
+                                name="External link"
+                                value="External link"
+                                >
+                                <label for="External link">
+                                External link <span aria-hidden="true">(8)</span>
+                                </label>
+                            </div>
+
+                        
+
+                      
+
+                        
+
+                            </fieldset>
+
+                            <button type="button" class="clear-filters">
+                            Clear filters
+                            </button>
+                        </form>
+
+
+                        </div>
+                        <!-- Results Column -->
+                        <div class="col-lg-9 col-md-8 col-re">
+                            <h2 class="sr-only">Search Results List</h2>
+                            <div class="filterBlocks">
+                                <div class="title-sort d-flex justify-content-between align-items-center">
+                                   
+                                    <div class="sort_boxResult" id="sortBox">
+                                        <label  for="sortSelect">Sort By</label>
+                                        <select id="sortSelect" class="form-control" name="sort">
+                                    <option value="">Relevance</option>
+                                    <option value="all">All</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                 </select>
+                                    </div>
+                                </div>
+                                <!-- Results -->
+                                <div class="result_row">
+                                    <a href="#">
+                                        <div class="re_category">
+                                            Category
+                                        </div>
+                                        <div class="rsltBody">
+                                            <h3>Title of a Form or Document</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie aliquam erat, ut accumsan turpis placerat sed. Donec dapibus nisl ut pellentesque suscipit.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="result_row">
+                                    <a href="#">
+                                        <div class="re_category">
+                                            Category
+                                        </div>
+                                        <div class="rsltBody">
+                                            <h3>Title of a Form or Document</h3>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie aliquam erat, ut accumsan turpis placerat sed. Donec dapibus nisl ut pellentesque suscipit.
+                                            </p>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
-
-                            <div class="list_wrap">
-                                <div class="evt_date">
-                                     <span>Aug 01</span> 
-                                     <span>2025</span> 
-                                </div>
-                                <div class="evt_info">
-                                    <a href="#">
-                                        <div class="ev_dt_cat">
-                                            <span class="time">10:00AM - 1:00PM</span> |
-                                            <span class="category">Community Center</span>
-                                            
-                                        </div>
-                                        <h3>Title of an Event or Meeting</h3>
-                                        <p>
-                                            Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel, our nonsensical text will help you fill in those empty
-                                            spaces with style.
-                                        </p>
-                                    </a>
-                                </div>
+                            <!-- Pagination -->
+                            <div class="pagination justify-content-center" role="navigation" aria-label="Pagination">
+                                <img src="img/pagination.png" alt="Pagination Navigation">
                             </div>
-
-
-
-
                         </div>
-
                     </div>
                 </div>
-
-                <div class="row nav_event">
-                    <a href="#" class="nav-arrow prev" aria-label="Previous Month">
-                        <img src="img/prev-icon.svg" alt="Previous"> Previous
-                    </a>
-                    <a href="#" class="nav-arrow next" aria-label="Next Month">
-                      Next  <img src="img/next-icon.svg" alt="next"> 
-                    </a>
-                </div>
-
-
             </div>
-
         </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
     </div>
     <footer class="footer ">
         <div class="container">
@@ -341,7 +379,6 @@
                 });
         })(jQuery);
     </script>
-
 </body>
 
 </html>
